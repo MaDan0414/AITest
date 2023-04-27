@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9d97d6462f3c74080b067685a26d6188
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 7ff5ebea90ada4fe5aea1ff6169301d4, type: 3}
+  _prompt: Simple solid fill shader. The color is exposed as a property.
+  _cached: "\n\nShader \"Unlit/SolidFill\" {\n    Properties {\n        _Color (\"Color\",
+    Color) = (1,1,1,1)\n    }\n \n    SubShader {\n        Tags {\"Queue\"=\"Transparent\"}\n       
+    Pass {\n            ZWrite Off\n            ColorMask RGB\n            Material
+    {\n                Diffuse [_Color]\n            }\n            Lighting Off\n           
+    SetTexture [_Dummy] { combine texture }\n        }\n    }\n    FallBack \"Diffuse\"\n}"
